@@ -8,8 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "cocos2d.h"
+#import "Box2D.h"
+#import "BoxDebugLayer.h"
 
-@interface GameScena : CCScene
+@interface GameScena : CCLayer
+{
+    b2World *world;
+    BoxDebugLayer *debugDraw;
+}
 
 +(CCScene *) scene;
 

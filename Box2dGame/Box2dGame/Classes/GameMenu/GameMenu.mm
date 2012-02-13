@@ -11,6 +11,7 @@
 
 @implementation GameMenu
 
+//==============================================================================
 +(CCScene *) scene
 {
     CCScene *scene = [CCScene node];
@@ -19,6 +20,7 @@
     return scene;
 }
 
+//==============================================================================
 - (id) init
 {
     self = [super init];
@@ -39,6 +41,7 @@
     return self;
 }
 
+//==============================================================================
 - (void) goGame
 {
     [[CCDirector sharedDirector] pushScene:[GameScena scene]];
